@@ -26,6 +26,12 @@
             android:text="Something Is Here"
             android:textSize="18sp" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:textSize="18sp"/>
+
     </LinearLayout>
 
     <FrameLayout
