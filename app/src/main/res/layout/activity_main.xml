@@ -21,17 +21,19 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="Something Is Here"
             android:textSize="18sp" />
 
         <Button
+            android:id="@+id/delete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Added"
-            android:textSize="18sp"/>
-
+            android:text="X"
+            android:textSize="18sp"
+            />
     </LinearLayout>
 
     <FrameLayout
@@ -39,7 +41,9 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toTopOf="@id/add"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/linearLayout">
@@ -50,6 +54,18 @@
             android:layout_height="match_parent" />
 
     </FrameLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add"
+        android:text="+"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
