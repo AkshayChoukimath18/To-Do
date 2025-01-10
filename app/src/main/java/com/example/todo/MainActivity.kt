@@ -33,7 +33,6 @@ class MainActivity : AppCompatActivity() {
             DataObject.deleteData()
         }
 
-
         binding.recyclerView.adapter = Adapter(DataObject.getData())
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
     }
